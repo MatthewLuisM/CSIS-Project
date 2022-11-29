@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Matthew Magtajas">
+        <title>CSIS1280 Project</title>
+        
+        <link href="css/styles_MMa43873.css" rel="stylesheet">
+        <link href="css/navi_MMa43873.css" rel="stylesheet">
+        <script src="script/validation_MMa43873.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>CSIS 1280 Project</h1>
+        <ul>
+            <li>Name: Matthew Magtajas</li>
+            <li>ID: 300343873</li>
+        </ul>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2_MMa43873.html">AV</a></li>
+                <li><a href="page3_MMa43873.html">About the Site</a></li>
+                <li><a href="page4_MMa43873.html">Form</a></li>
+                <li><a href="page5_MMa43873.html">Page 5</a></li>
+            </ul>
+        </nav>
+        <article>
+            <section>
+                <h3>Quick Survey:</h3>
+                Here is a quick survey to find out more about you! This form will ask for your name, age, and country of origin.
+                <br> This is just so I can get a feel for the demographic of the traffic going through the site.<br>
+                <form name="myform" action='' method="get">
+                    <fieldset>
+                        <legend>Quick Survey</legend>
+                        <div>
+                            <label for="yourName">Your Name</label>
+                            <input type="text" name="yourName" id="yourName"
+                            placeholder="Enter your name" required>
+                        </div>
+                        <div>
+                            <label for="age">Age (13 - 80)</label>
+                            <input type="number" name="age" id="age" min="13" max="80" step="1" required>
+                        </div>
+                        <div>
+                            <label>Country</label>
+                            <span id="status_span"> <br>
+                                <input type="radio" name="status" id="canada" value="canada">Canada <br>
+                                <input type="radio" name="status" id="america" value="america">USA <br>
+                                <input type="radio" name="status" id="india" value="india">India <br>
+                                <input type="radio" name="status" id="china" value="china">China <br>
+                                <input type="radio" name="status" id="other" value="other">Other 
+                            </span>
+                        </div>
+                        <div>
+                            <input type="submit" value="Submit Survey"
+                            onClick="return runValidate(this.form)">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </article>
+    </body>
+</html>

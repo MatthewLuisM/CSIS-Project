@@ -1,0 +1,43 @@
+*
+{
+    box-sizing: border-box;
+}
+html
+{
+    background-color: black;
+}
+article
+{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+section
+{
+    flex-grow: 1;
+    flex-basis: 300px;
+    height: 100%;
+    background-color: snow;
+    margin: 5px;
+    padding: 20px;
+}
+
+div#intro img
+{
+    object-fit: cover;
+    border-radius: 10px;
+    width: 10%;
+}
+
+legend
+{
+    padding: 8px;
+    border-radius: 0.5em;
+}
+
+fieldset
+{
+    max-width: 500px;
+}
